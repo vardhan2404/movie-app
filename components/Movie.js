@@ -5,7 +5,7 @@ import { AntDesign } from '@expo/vector-icons';
 
 const DisplayModal = ({item, setShowModal}) => {
     const openWebsite = (imdbid) => {
-        const url = 'https://m.imdb.com/title/'+imdbid; // Replace with the URL of the website you want to open
+        const url = 'https://m.imdb.com/title/'+imdbid;
         Linking.openURL(url)
           .catch(error => console.error('Error opening website: ', error));
       };
@@ -114,10 +114,10 @@ styles = StyleSheet.create({
         
     },
     iconContainer: {
-    position: 'absolute', // Make sure the icon container is absolute
-    top: 10, // Adjust the position as needed
-    right: 10, // Adjust the position as needed
-    zIndex: 1, // Ensure the icon is displayed above the image
+    position: 'absolute',
+    top: 10, 
+    right: 10,
+    zIndex: 1,
   },
   TextInput:{
     color:"white",
